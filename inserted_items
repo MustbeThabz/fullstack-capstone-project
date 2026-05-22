@@ -1,11 +1,11 @@
-Task 3: MongoDB Import Output (paste your terminal output here)
-
-Expected command example:
-mongoimport --db giftlink --collection gifts --file gifts.json --jsonArray
-
-Paste BOTH the command and the output below:
+Task 3: MongoDB Import Output
 
 COMMAND:
+mongoimport --uri "mongodb://127.0.0.1:27017" --db giftlink --collection gifts --file gifts.json --jsonArray
 
-OUTPUT (must show 16 documents imported):
+OUTPUT:
+2026-05-22T18:18:41.471+0200	connected to: mongodb://127.0.0.1:27017
+2026-05-22T18:18:41.496+0200	16 document(s) imported successfully. 0 document(s) failed to import.
 
+EXIT_CODE:
+0

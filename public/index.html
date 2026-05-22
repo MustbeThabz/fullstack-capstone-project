@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiftLink</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --card: rgba(255, 255, 255, 0.06);
+        --text: #eef2ff;
+        --muted: rgba(238, 242, 255, 0.7);
+        --accent: #7c3aed;
+        --accent2: #22c55e;
+        --border: rgba(255, 255, 255, 0.12);
+      }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+          "Apple Color Emoji", "Segoe UI Emoji";
+        background: radial-gradient(1200px 600px at 20% 10%, rgba(124, 58, 237, 0.35), transparent),
+          radial-gradient(1000px 600px at 80% 30%, rgba(34, 197, 94, 0.22), transparent),
+          var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+      }
+      .wrap {
+        max-width: 920px;
+        width: 100%;
+      }
+      .card {
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 20px;
+        padding: 36px;
+        backdrop-filter: blur(10px);
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 48px;
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin: 0 0 22px;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        padding: 12px 16px;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.06);
+      }
+      .btn.primary {
+        background: linear-gradient(135deg, rgba(124, 58, 237, 0.9), rgba(34, 197, 94, 0.7));
+        border-color: transparent;
+      }
+      .pill {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 12px;
+        color: var(--muted);
+        border: 1px solid var(--border);
+        padding: 6px 10px;
+        border-radius: 999px;
+      }
+      .grid {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .tile {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 14px;
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .tile h3 {
+        margin: 0 0 6px;
+        font-size: 14px;
+      }
+      .tile p {
+        margin: 0;
+        font-size: 12px;
+      }
+      @media (max-width: 800px) {
+        h1 {
+          font-size: 38px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <div class="pill">Full-Stack Capstone • Gift Finder</div>
+        <h1>GiftLink</h1>
+        <p>
+          Find thoughtful gifts fast—filter by category, browse details, and save ideas for later.
+          Built with Node/Express + MongoDB.
+        </p>
+        <div class="row">
+          <a class="btn primary" href="#get-started">Get Started</a>
+          <a class="btn" href="/api/gifts">View API Items</a>
+          <a class="btn" href="/api/search?category=books">Try Search</a>
+        </div>
+        <div id="get-started" class="grid" aria-label="Quick start">
+          <div class="tile">
+            <h3>1) Seed data</h3>
+            <p>Import `gifts.json` into MongoDB.</p>
+          </div>
+          <div class="tile">
+            <h3>2) Run server</h3>
+            <p>`npm install` then `npm run dev`.</p>
+          </div>
+          <div class="tile">
+            <h3>3) Test endpoints</h3>
+            <p>Use cURL files in the repo for submission.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

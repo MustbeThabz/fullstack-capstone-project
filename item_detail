@@ -1,0 +1,7 @@
+item_detail
+
+COMMAND:
+curl http://localhost:5000/api/gifts/000000000000000000000003
+
+OUTPUT:
+{"_id":"000000000000000000000003","name":"Wireless Earbuds (Noise Reduction)","description":"Compact earbuds with passive noise reduction and charging case.","category":"tech","price":49.99,"tags":["audio","music","commute"]}

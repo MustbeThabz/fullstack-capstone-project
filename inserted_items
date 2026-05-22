@@ -1,0 +1,11 @@
+Task 3: MongoDB Import Output (paste your terminal output here)
+
+Expected command example:
+mongoimport --db giftlink --collection gifts --file gifts.json --jsonArray
+
+Paste BOTH the command and the output below:
+
+COMMAND:
+
+OUTPUT (must show 16 documents imported):
+

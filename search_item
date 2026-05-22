@@ -1,0 +1,7 @@
+search_item
+
+COMMAND:
+curl "http://localhost:5000/api/search?category=tech"
+
+OUTPUT:
+[{"_id":"000000000000000000000003","name":"Wireless Earbuds (Noise Reduction)","description":"Compact earbuds with passive noise reduction and charging case.","category":"tech","price":49.99,"tags":["audio","music","commute"]},{"_id":"000000000000000000000009","name":"Bluetooth Tracker Tag","description":"Attach to keys or bag to help locate lost items.","category":"tech","price":14.99,"tags":["travel","keys","everyday"]},{"_id":"00000000000000000000000e","name":"E-Reader Sleeve Case","description":"Protective sleeve with soft lining for e-readers and small tablets.","category":"tech","price":15.5,"tags":["travel","reading","protection"]}]

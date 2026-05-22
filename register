@@ -1,0 +1,7 @@
+register
+
+COMMAND:
+curl -X POST http://localhost:5000/api/auth/register -H "Content-Type: application/json" -d '{"name":"Test User","email":"test+1779465642@example.com","password":"Password123!"}'
+
+OUTPUT:
+{"_id":"6a107dc8645c2504f38fb075","email":"test+1779465642@example.com","name":"Test User"}

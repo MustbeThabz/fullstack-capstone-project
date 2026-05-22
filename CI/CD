@@ -1,7 +1,37 @@
 Task 18: GitHub Actions Output
 
 COMMAND:
-curl -fsSL https://api.github.com/repos/MustbeThabz/fullstack-capstone-project/actions/runs?per_page=5
+curl -fsSL https://api.github.com/repos/MustbeThabz/fullstack-capstone-project/actions/runs/26298761654/jobs?per_page=100
 
 OUTPUT (must show success):
-{"total_count":2,"workflow_runs":[{"name":"CI","status":"completed","conclusion":"success","html_url":"https://github.com/MustbeThabz/fullstack-capstone-project/actions/runs/26298761654","created_at":"2026-05-22T16:10:17Z","updated_at":"2026-05-22T16:10:35Z"}]}
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 77418181753,
+      "run_id": 26298761654,
+      "workflow_name": "CI",
+      "head_branch": "main",
+      "head_sha": "47ecbde31fee12a0c2f14cbf18ed499c0eaa4a67",
+      "html_url": "https://github.com/MustbeThabz/fullstack-capstone-project/actions/runs/26298761654/job/77418181753",
+      "status": "completed",
+      "conclusion": "success",
+      "name": "node",
+      "steps": [
+        { "name": "Set up job", "status": "completed", "conclusion": "success" },
+        { "name": "Run actions/checkout@v4", "status": "completed", "conclusion": "success" },
+        { "name": "Run actions/setup-node@v4", "status": "completed", "conclusion": "success" },
+        { "name": "Run npm install", "status": "completed", "conclusion": "success" },
+        { "name": "Run node -c index.js", "status": "completed", "conclusion": "success" },
+        { "name": "Run node -c app.js", "status": "completed", "conclusion": "success" },
+        { "name": "Run node -c db.js", "status": "completed", "conclusion": "success" },
+        { "name": "Run node -c giftRoutes.js", "status": "completed", "conclusion": "success" },
+        { "name": "Run node -c searchRoutes.js", "status": "completed", "conclusion": "success" },
+        { "name": "Run node -c authRoutes.js", "status": "completed", "conclusion": "success" },
+        { "name": "Post Run actions/setup-node@v4", "status": "completed", "conclusion": "success" },
+        { "name": "Post Run actions/checkout@v4", "status": "completed", "conclusion": "success" },
+        { "name": "Complete job", "status": "completed", "conclusion": "success" }
+      ]
+    }
+  ]
+}
